@@ -1,0 +1,71 @@
+@font-face {
+    font-family: pattaya;
+    src: url("../assets/fonts/Pattaya-Regular.ttf") format("opentype");
+  }
+
+.container{
+    height:100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+}
+
+a{
+    text-decoration: none;
+    padding:0 20px;
+    font-size:20px;
+}
+
+.rowington{
+    width:100%;
+    margin-top:30px;
+    margin-bottom:50px;
+    display:flex;
+}
+
+.homeless{
+    width:250px;
+    float:right;
+}
+
+.logo{
+    flex:3;
+}
+
+.meniu{
+    margin:0;
+    padding:0 20px;
+}
+
+.active{
+    color:green;
+    border-bottom: 1px solid green;
+    padding:10px 15px;
+    font-weight: 500;
+    font-style:italic;
+}
+
+.cute-wolf{
+    width:75px;
+    height:60px;
+    position:relative;
+    top:-25px;
+    left:-10px;
+}
+
+.logo-text{
+    font-size:30px;
+    letter-spacing: 2px;
+    position: relative;
+    top:-12px;
+    left:-15px;
+    font-weight: 500;
+    font-family:'pattaya','arial',sans-serif;
+}

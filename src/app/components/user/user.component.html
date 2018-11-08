@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="divison">
+    <div class="userList" *ngFor="let user of users; let i = index">
+      <label>{{i+1}}. {{user.name}}</label>
+      <button (click)="toggleEdit(user)">...</button>
+      
+    </div>
+  </div>
+
+  <div class="userDetails" *ngIf=isEdit>
+      <form >
+        <div>
+          <label for="name">Name: </label><br>
+          <input type="text" [(ngModel)]="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email: </label><br>
+            <input type="text" [(ngModel)]="email" name="email">
+        </div>
+        <div>
+            <label for="email">Website: </label><br>
+            <input type="text" [(ngModel)]="website" name="website">
+        </div>
+        <div>
+            <label for="city">City: </label><br>
+            <input type="text" [(ngModel)]="address.city" name="city">
+        </div>
+        <div>
+          <label for="street">Street: </label><br>
+          <input type="text" [(ngModel)]="address.street" name="street">
+      </div>
+      </form>
+    </div>
+</div>
+
+  
+  
+  
+
+

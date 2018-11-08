@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="rowington">
+        <div class="logo">
+            <a routerLink="/">
+                <img class="cute-wolf" src="../assets/images/t_rex.jpg">
+                <span class="logo-text">Coding with Rexy</span>
+            </a>
+        </div>
+        <ul class="meniu">
+            <li>
+                <a routerLink = "/user" [class.active]="currentUrl == '/user' ">Users</a>
+            </li>
+            <li>
+                <a routerLink = "/form" [class.active]="currentUrl == '/form' ">Form</a>
+                </li>
+            <li>
+                <a routerLink = "/about" [class.active]="currentUrl == '/about' ">About</a>
+            </li>
+            <li>
+                <a routerLink = "/posts" [class.active]="currentUrl == '/posts' ">Posts</a>
+            </li>
+            <li>
+                <a routerLink = "/gallery" [class.active]="currentUrl == '/gallery' ">Gallery</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+

@@ -1,0 +1,53 @@
+.container{
+    padding:0 30px;
+    display:flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.userList label{
+    padding-bottom:10px;
+    font-size:20px;
+}
+
+.divison, .userDetails{
+    flex:5;
+}
+
+.userDetails{
+    padding-left:30px;
+    padding-bottom:10px;
+    line-height:25px;
+}
+
+
+.userList button{
+    float:right;
+}
+
+.userDetails span{
+    font-weight: bold;
+    font-size:20px;
+    padding-bottom:10px;
+}
+
+.userDetails div{
+    padding-bottom:15px;
+}
+
+.userDetails input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.userDetails label{
+    font-style:italic;
+}
+
+button:focus{
+    background:white;
+    outline:none;
+}

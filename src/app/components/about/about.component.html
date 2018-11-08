@@ -1,0 +1,18 @@
+<div class="container">
+  <h3 class="title">Hobbies:</h3>
+  <div class="oneHobby" *ngFor="let hobby of updatedData; let i = index">
+    <span>{{i + 1}}. {{hobby}}  </span>
+    <button (click)="deleteHobby(i)">x</button>
+    <div class="clearfix"></div>
+  </div>
+
+
+  <form id="formId" (submit)="addHobby(hobby.value)"> 
+    <div>
+      <input id="hobbyInput" placeholder="Add hobby" onfocus="this.value=''" #hobby> <br>
+      <button type="submit">+</button>
+    </div>
+  </form>
+</div>
+
+

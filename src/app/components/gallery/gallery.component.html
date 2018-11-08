@@ -1,0 +1,8 @@
+  <div class="container">
+    <div class="photos-gallery" *ngFor='let photo of photos;let i=index'>
+      <div class="counting" *ngIf="i < 24">
+          <img src="{{photo.thumbnailUrl}}">
+      </div>
+    </div>
+  </div>
+
